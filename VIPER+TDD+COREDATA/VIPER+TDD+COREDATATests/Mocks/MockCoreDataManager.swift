@@ -5,28 +5,36 @@
 //  Created by Ted on 2021/07/28.
 //
 
-import XCTest
+import Foundation
+@testable import VIPER_TDD_COREDATA
 
-class MockCoreDataManager: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class MockCoreDataManager: CoreDataManager {
+    var data: [String: Any]?
+    var saveContextCalled = 0
+    var createCalled = 0
+    var updateCalled = 0
+    
+    var stubNil = false
+    
+    override func saveContext() {
+        self.saveContextCalled += 1
+        super.saveContext()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    override func create<T>(ofType type: T.Type, withData data: [String : Any]?) -> T? where T : CoreDataService {
+        self.data = data
+        self.createCalled += 1
+        
+        if stubNil {
+            return nil
         }
+        
+        return super.create(ofType: type, withData: data)
     }
-
+    
+    override func update<T>(entity: T, withData data: [String : Any]) where T : CoreDataService {
+        self.data = data
+        self.updateCalled += 1
+        super.update(entity: entity, withData: data)
+    }
 }

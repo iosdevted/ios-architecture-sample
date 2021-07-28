@@ -12,7 +12,6 @@
 		9FE27A6726B1B3F800F9942B /* VIPER_TDD_COREDATA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A6526B1B3F800F9942B /* VIPER_TDD_COREDATA.xcdatamodeld */; };
 		9FE27A6926B1B3FA00F9942B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE27A6826B1B3FA00F9942B /* Assets.xcassets */; };
 		9FE27A6C26B1B3FA00F9942B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FE27A6A26B1B3FA00F9942B /* LaunchScreen.storyboard */; };
-		9FE27A7726B1B3FA00F9942B /* VIPER_TDD_COREDATATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A7626B1B3FA00F9942B /* VIPER_TDD_COREDATATests.swift */; };
 		9FE27A9D26B1B7E900F9942B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A9C26B1B7E900F9942B /* Router.swift */; };
 		9FE27AA026B1B99000F9942B /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A9F26B1B99000F9942B /* ListRouter.swift */; };
 		9FE27AA526B1BA0A00F9942B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AA426B1BA0A00F9942B /* ListViewController.swift */; };
@@ -22,17 +21,14 @@
 		9FE27AB026B1CAC800F9942B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AAF26B1CAC800F9942B /* CoreDataManager.swift */; };
 		9FE27AB226B1D63700F9942B /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB126B1D63700F9942B /* CoreDataService.swift */; };
 		9FE27AB426B1DBE500F9942B /* TodoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB326B1DBE500F9942B /* TodoKey.swift */; };
+		9FE27ABA26B2001700F9942B /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */; };
+		9FE27ABC26B201C700F9942B /* MockCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */; };
+		9FE27ABE26B202D100F9942B /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */; };
+		9FE27AC026B2149700F9942B /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABF26B2149700F9942B /* ListRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9FE27A7326B1B3FA00F9942B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9FE27A5126B1B3F800F9942B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9FE27A5826B1B3F800F9942B;
-			remoteInfo = "VIPER+TDD+COREDATA";
-		};
-		9FE27A7E26B1B3FA00F9942B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9FE27A5126B1B3F800F9942B /* Project object */;
 			proxyType = 1;
@@ -50,9 +46,7 @@
 		9FE27A6B26B1B3FA00F9942B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FE27A6D26B1B3FA00F9942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FE27A7226B1B3FA00F9942B /* VIPER+TDD+COREDATATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER+TDD+COREDATATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9FE27A7626B1B3FA00F9942B /* VIPER_TDD_COREDATATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_TDD_COREDATATests.swift; sourceTree = "<group>"; };
 		9FE27A7826B1B3FA00F9942B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FE27A7D26B1B3FA00F9942B /* VIPER+TDD+COREDATAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER+TDD+COREDATAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE27A9C26B1B7E900F9942B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9FE27A9F26B1B99000F9942B /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
 		9FE27AA426B1BA0A00F9942B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +56,10 @@
 		9FE27AAF26B1CAC800F9942B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		9FE27AB126B1D63700F9942B /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		9FE27AB326B1DBE500F9942B /* TodoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoKey.swift; sourceTree = "<group>"; };
+		9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
+		9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataManager.swift; sourceTree = "<group>"; };
+		9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
+		9FE27ABF26B2149700F9942B /* ListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +71,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9FE27A6F26B1B3FA00F9942B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FE27A7A26B1B3FA00F9942B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,7 +94,6 @@
 			children = (
 				9FE27A5926B1B3F800F9942B /* VIPER+TDD+COREDATA.app */,
 				9FE27A7226B1B3FA00F9942B /* VIPER+TDD+COREDATATests.xctest */,
-				9FE27A7D26B1B3FA00F9942B /* VIPER+TDD+COREDATAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,12 +114,12 @@
 		9FE27A7526B1B3FA00F9942B /* VIPER+TDD+COREDATATests */ = {
 			isa = PBXGroup;
 			children = (
+				9FE27A9726B1B5B900F9942B /* Mocks */,
+				9FE27AB626B1FFE600F9942B /* CoreData */,
 				9FE27A9B26B1B5CF00F9942B /* View */,
 				9FE27A9A26B1B5CB00F9942B /* Interactor */,
 				9FE27A9926B1B5C700F9942B /* Presenter */,
 				9FE27A9826B1B5BF00F9942B /* Router */,
-				9FE27A9726B1B5B900F9942B /* Mocks */,
-				9FE27A7626B1B3FA00F9942B /* VIPER_TDD_COREDATATests.swift */,
 				9FE27A7826B1B3FA00F9942B /* Info.plist */,
 			);
 			path = "VIPER+TDD+COREDATATests";
@@ -210,6 +200,8 @@
 		9FE27A9726B1B5B900F9942B /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */,
+				9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -217,6 +209,7 @@
 		9FE27A9826B1B5BF00F9942B /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				9FE27ABF26B2149700F9942B /* ListRouterTests.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -291,6 +284,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		9FE27AB626B1FFE600F9942B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,24 +330,6 @@
 			productReference = 9FE27A7226B1B3FA00F9942B /* VIPER+TDD+COREDATATests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9FE27A7C26B1B3FA00F9942B /* VIPER+TDD+COREDATAUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9FE27A8C26B1B3FA00F9942B /* Build configuration list for PBXNativeTarget "VIPER+TDD+COREDATAUITests" */;
-			buildPhases = (
-				9FE27A7926B1B3FA00F9942B /* Sources */,
-				9FE27A7A26B1B3FA00F9942B /* Frameworks */,
-				9FE27A7B26B1B3FA00F9942B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9FE27A7F26B1B3FA00F9942B /* PBXTargetDependency */,
-			);
-			name = "VIPER+TDD+COREDATAUITests";
-			productName = "VIPER+TDD+COREDATAUITests";
-			productReference = 9FE27A7D26B1B3FA00F9942B /* VIPER+TDD+COREDATAUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -360,10 +343,6 @@
 						CreatedOnToolsVersion = 12.5.1;
 					};
 					9FE27A7126B1B3FA00F9942B = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 9FE27A5826B1B3F800F9942B;
-					};
-					9FE27A7C26B1B3FA00F9942B = {
 						CreatedOnToolsVersion = 12.5.1;
 						TestTargetID = 9FE27A5826B1B3F800F9942B;
 					};
@@ -384,7 +363,6 @@
 			targets = (
 				9FE27A5826B1B3F800F9942B /* VIPER+TDD+COREDATA */,
 				9FE27A7126B1B3FA00F9942B /* VIPER+TDD+COREDATATests */,
-				9FE27A7C26B1B3FA00F9942B /* VIPER+TDD+COREDATAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -400,13 +378,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9FE27A7026B1B3FA00F9942B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FE27A7B26B1B3FA00F9942B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -439,14 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE27A7726B1B3FA00F9942B /* VIPER_TDD_COREDATATests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9FE27A7926B1B3FA00F9942B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9FE27AC026B2149700F9942B /* ListRouterTests.swift in Sources */,
+				9FE27ABC26B201C700F9942B /* MockCoreDataManager.swift in Sources */,
+				9FE27ABE26B202D100F9942B /* MockPersistentContainer.swift in Sources */,
+				9FE27ABA26B2001700F9942B /* CoreDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,11 +424,6 @@
 			isa = PBXTargetDependency;
 			target = 9FE27A5826B1B3F800F9942B /* VIPER+TDD+COREDATA */;
 			targetProxy = 9FE27A7326B1B3FA00F9942B /* PBXContainerItemProxy */;
-		};
-		9FE27A7F26B1B3FA00F9942B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9FE27A5826B1B3F800F9942B /* VIPER+TDD+COREDATA */;
-			targetProxy = 9FE27A7E26B1B3FA00F9942B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -675,46 +637,6 @@
 			};
 			name = Release;
 		};
-		9FE27A8D26B1B3FA00F9942B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "VIPER+TDD+COREDATAUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.VIPER-TDD-COREDATAUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "VIPER+TDD+COREDATA";
-			};
-			name = Debug;
-		};
-		9FE27A8E26B1B3FA00F9942B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "VIPER+TDD+COREDATAUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.VIPER-TDD-COREDATAUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "VIPER+TDD+COREDATA";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -741,15 +663,6 @@
 			buildConfigurations = (
 				9FE27A8A26B1B3FA00F9942B /* Debug */,
 				9FE27A8B26B1B3FA00F9942B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9FE27A8C26B1B3FA00F9942B /* Build configuration list for PBXNativeTarget "VIPER+TDD+COREDATAUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9FE27A8D26B1B3FA00F9942B /* Debug */,
-				9FE27A8E26B1B3FA00F9942B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
