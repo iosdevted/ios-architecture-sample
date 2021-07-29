@@ -22,7 +22,7 @@ protocol ListEventHandler {
 
 class ListPresenter {
     weak var view: ListViewController?
-    let router: ListRouter?
+    let router: ListRouter
     let interactor: ListInteractorInputProtocol?
     var todoList = [Todo]()
     
@@ -44,7 +44,7 @@ extension ListPresenter: ListEventHandler {
     }
     
     func ButtonAddClicked() {
-        print("push to anoter view controller")
+        router.pushAddTodoListViewController(from: view, animated: true)
     }
 }
 

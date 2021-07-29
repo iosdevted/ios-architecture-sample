@@ -22,7 +22,10 @@ class ListRouter: Router {
     }
     
     func pushAddTodoListViewController(from view: UIViewController?, animated: Bool) {
-        // Go to another route
+        let addTodoRouter = AddTodoRouter()
+
+        view?.navigationController?.pushViewController(addTodoRouter.viewController,
+                                                       animated: animated)
         
     }
 }
