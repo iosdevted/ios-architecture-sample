@@ -25,6 +25,10 @@
 		9FE27ABC26B201C700F9942B /* MockCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */; };
 		9FE27ABE26B202D100F9942B /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */; };
 		9FE27AC026B2149700F9942B /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABF26B2149700F9942B /* ListRouterTests.swift */; };
+		9FE27AC326B21DC700F9942B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AC226B21DC700F9942B /* Reusable.swift */; };
+		9FE27AC526B21E1A00F9942B /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AC426B21E1A00F9942B /* UITableView+Reusable.swift */; };
+		9FE27AC726B2AD4E00F9942B /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AC626B2AD4E00F9942B /* ListTableViewCell.swift */; };
+		9FE27AC926B2B25B00F9942B /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AC826B2B25A00F9942B /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataManager.swift; sourceTree = "<group>"; };
 		9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
 		9FE27ABF26B2149700F9942B /* ListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
+		9FE27AC226B21DC700F9942B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		9FE27AC426B21E1A00F9942B /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		9FE27AC626B2AD4E00F9942B /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		9FE27AC826B2B25A00F9942B /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,8 @@
 				9FE27A5E26B1B3F800F9942B /* SceneDelegate.swift */,
 				9FE27A6D26B1B3FA00F9942B /* Info.plist */,
 				9FE27AAE26B1CAA500F9942B /* Manager */,
-				9FE27A8F26B1B45B00F9942B /* Resources */,
 				9FE27A9026B1B4A200F9942B /* Modules */,
+				9FE27A8F26B1B45B00F9942B /* Resources */,
 			);
 			path = "VIPER+TDD+COREDATA";
 			sourceTree = "<group>";
@@ -160,6 +168,8 @@
 		9FE27A9226B1B52100F9942B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				9FE27AC126B21DAC00F9942B /* Reusable */,
+				9FE27AC826B2B25A00F9942B /* UIColor+Extensions.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -247,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				9FE27AA426B1BA0A00F9942B /* ListViewController.swift */,
+				9FE27AC626B2AD4E00F9942B /* ListTableViewCell.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -290,6 +301,15 @@
 				9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9FE27AC126B21DAC00F9942B /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				9FE27AC226B21DC700F9942B /* Reusable.swift */,
+				9FE27AC426B21E1A00F9942B /* UITableView+Reusable.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,12 +417,16 @@
 				9FE27A5D26B1B3F800F9942B /* AppDelegate.swift in Sources */,
 				9FE27AA526B1BA0A00F9942B /* ListViewController.swift in Sources */,
 				9FE27A6726B1B3F800F9942B /* VIPER_TDD_COREDATA.xcdatamodeld in Sources */,
+				9FE27AC526B21E1A00F9942B /* UITableView+Reusable.swift in Sources */,
+				9FE27AC326B21DC700F9942B /* Reusable.swift in Sources */,
 				9FE27AA026B1B99000F9942B /* ListRouter.swift in Sources */,
 				9FE27AB426B1DBE500F9942B /* TodoKey.swift in Sources */,
 				9FE27AB226B1D63700F9942B /* CoreDataService.swift in Sources */,
+				9FE27AC926B2B25B00F9942B /* UIColor+Extensions.swift in Sources */,
 				9FE27AA926B1BA5200F9942B /* ListInteractor.swift in Sources */,
 				9FE27AB026B1CAC800F9942B /* CoreDataManager.swift in Sources */,
 				9FE27A5F26B1B3F800F9942B /* SceneDelegate.swift in Sources */,
+				9FE27AC726B2AD4E00F9942B /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
