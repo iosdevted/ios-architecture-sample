@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2B653C26B2E95F000914FD /* ListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B653B26B2E95F000914FD /* ListInteractorTests.swift */; };
+		9F2B653E26B2EA6E000914FD /* MockListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B653D26B2EA6E000914FD /* MockListInteractorOutput.swift */; };
+		9F2B654026B2EDEC000914FD /* MockListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B653F26B2EDEC000914FD /* MockListInteractorInput.swift */; };
+		9F2B654226B2EE5F000914FD /* ListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B654126B2EE5F000914FD /* ListPresenterTests.swift */; };
+		9F2B654426B2EF44000914FD /* MockListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B654326B2EF44000914FD /* MockListRouter.swift */; };
+		9F2B654626B2EF96000914FD /* MockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B654526B2EF96000914FD /* MockListView.swift */; };
+		9F2B654826B2F19A000914FD /* MockListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B654726B2F19A000914FD /* MockListEventHandler.swift */; };
+		9F2B654A26B30A41000914FD /* ListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2B654926B30A41000914FD /* ListViewTests.swift */; };
 		9FE27A5D26B1B3F800F9942B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A5C26B1B3F800F9942B /* AppDelegate.swift */; };
 		9FE27A5F26B1B3F800F9942B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A5E26B1B3F800F9942B /* SceneDelegate.swift */; };
 		9FE27A6726B1B3F800F9942B /* VIPER_TDD_COREDATA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27A6526B1B3F800F9942B /* VIPER_TDD_COREDATA.xcdatamodeld */; };
@@ -17,11 +25,10 @@
 		9FE27AA526B1BA0A00F9942B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AA426B1BA0A00F9942B /* ListViewController.swift */; };
 		9FE27AA726B1BA2400F9942B /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AA626B1BA2400F9942B /* ListPresenter.swift */; };
 		9FE27AA926B1BA5200F9942B /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AA826B1BA5200F9942B /* ListInteractor.swift */; };
-		9FE27AAB26B1BB4800F9942B /* ListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AAA26B1BB4800F9942B /* ListInteractorIO.swift */; };
 		9FE27AB026B1CAC800F9942B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AAF26B1CAC800F9942B /* CoreDataManager.swift */; };
-		9FE27AB226B1D63700F9942B /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB126B1D63700F9942B /* CoreDataService.swift */; };
+		9FE27AB226B1D63700F9942B /* Todo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB126B1D63700F9942B /* Todo+Extensions.swift */; };
 		9FE27AB426B1DBE500F9942B /* TodoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB326B1DBE500F9942B /* TodoKey.swift */; };
-		9FE27ABA26B2001700F9942B /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */; };
+		9FE27ABA26B2001700F9942B /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27AB926B2001700F9942B /* CoreDataTests.swift */; };
 		9FE27ABC26B201C700F9942B /* MockCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */; };
 		9FE27ABE26B202D100F9942B /* MockPersistentContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */; };
 		9FE27AC026B2149700F9942B /* ListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE27ABF26B2149700F9942B /* ListRouterTests.swift */; };
@@ -42,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F2B653B26B2E95F000914FD /* ListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorTests.swift; sourceTree = "<group>"; };
+		9F2B653D26B2EA6E000914FD /* MockListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListInteractorOutput.swift; sourceTree = "<group>"; };
+		9F2B653F26B2EDEC000914FD /* MockListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListInteractorInput.swift; sourceTree = "<group>"; };
+		9F2B654126B2EE5F000914FD /* ListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenterTests.swift; sourceTree = "<group>"; };
+		9F2B654326B2EF44000914FD /* MockListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListRouter.swift; sourceTree = "<group>"; };
+		9F2B654526B2EF96000914FD /* MockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListView.swift; sourceTree = "<group>"; };
+		9F2B654726B2F19A000914FD /* MockListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockListEventHandler.swift; sourceTree = "<group>"; };
+		9F2B654926B30A41000914FD /* ListViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewTests.swift; sourceTree = "<group>"; };
 		9FE27A5926B1B3F800F9942B /* VIPER+TDD+COREDATA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER+TDD+COREDATA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE27A5C26B1B3F800F9942B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FE27A5E26B1B3F800F9942B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,11 +71,10 @@
 		9FE27AA426B1BA0A00F9942B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		9FE27AA626B1BA2400F9942B /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
 		9FE27AA826B1BA5200F9942B /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
-		9FE27AAA26B1BB4800F9942B /* ListInteractorIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractorIO.swift; sourceTree = "<group>"; };
 		9FE27AAF26B1CAC800F9942B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		9FE27AB126B1D63700F9942B /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		9FE27AB126B1D63700F9942B /* Todo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Extensions.swift"; sourceTree = "<group>"; };
 		9FE27AB326B1DBE500F9942B /* TodoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoKey.swift; sourceTree = "<group>"; };
-		9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
+		9FE27AB926B2001700F9942B /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 		9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoreDataManager.swift; sourceTree = "<group>"; };
 		9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPersistentContainer.swift; sourceTree = "<group>"; };
 		9FE27ABF26B2149700F9942B /* ListRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouterTests.swift; sourceTree = "<group>"; };
@@ -145,7 +159,6 @@
 		9FE27A9026B1B4A200F9942B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9FE27AB526B1DD2100F9942B /* Service */,
 				9FE27A9226B1B52100F9942B /* Component */,
 				9FE27A9626B1B53E00F9942B /* Router */,
 				9FE27A9326B1B52900F9942B /* View */,
@@ -170,6 +183,7 @@
 			children = (
 				9FE27AC126B21DAC00F9942B /* Reusable */,
 				9FE27AC826B2B25A00F9942B /* UIColor+Extensions.swift */,
+				9FE27AB126B1D63700F9942B /* Todo+Extensions.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -212,6 +226,11 @@
 			children = (
 				9FE27ABB26B201C700F9942B /* MockCoreDataManager.swift */,
 				9FE27ABD26B202D100F9942B /* MockPersistentContainer.swift */,
+				9F2B653D26B2EA6E000914FD /* MockListInteractorOutput.swift */,
+				9F2B653F26B2EDEC000914FD /* MockListInteractorInput.swift */,
+				9F2B654326B2EF44000914FD /* MockListRouter.swift */,
+				9F2B654526B2EF96000914FD /* MockListView.swift */,
+				9F2B654726B2F19A000914FD /* MockListEventHandler.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -227,6 +246,7 @@
 		9FE27A9926B1B5C700F9942B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				9F2B654126B2EE5F000914FD /* ListPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -234,6 +254,7 @@
 		9FE27A9A26B1B5CB00F9942B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				9F2B653B26B2E95F000914FD /* ListInteractorTests.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -241,6 +262,7 @@
 		9FE27A9B26B1B5CF00F9942B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9F2B654926B30A41000914FD /* ListViewTests.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,7 +296,6 @@
 			isa = PBXGroup;
 			children = (
 				9FE27AA826B1BA5200F9942B /* ListInteractor.swift */,
-				9FE27AAA26B1BB4800F9942B /* ListInteractorIO.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -287,18 +308,10 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		9FE27AB526B1DD2100F9942B /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				9FE27AB126B1D63700F9942B /* CoreDataService.swift */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
 		9FE27AB626B1FFE600F9942B /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				9FE27AB926B2001700F9942B /* CoreDataServiceTests.swift */,
+				9FE27AB926B2001700F9942B /* CoreDataTests.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -412,7 +425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE27AA726B1BA2400F9942B /* ListPresenter.swift in Sources */,
-				9FE27AAB26B1BB4800F9942B /* ListInteractorIO.swift in Sources */,
 				9FE27A9D26B1B7E900F9942B /* Router.swift in Sources */,
 				9FE27A5D26B1B3F800F9942B /* AppDelegate.swift in Sources */,
 				9FE27AA526B1BA0A00F9942B /* ListViewController.swift in Sources */,
@@ -421,7 +433,7 @@
 				9FE27AC326B21DC700F9942B /* Reusable.swift in Sources */,
 				9FE27AA026B1B99000F9942B /* ListRouter.swift in Sources */,
 				9FE27AB426B1DBE500F9942B /* TodoKey.swift in Sources */,
-				9FE27AB226B1D63700F9942B /* CoreDataService.swift in Sources */,
+				9FE27AB226B1D63700F9942B /* Todo+Extensions.swift in Sources */,
 				9FE27AC926B2B25B00F9942B /* UIColor+Extensions.swift in Sources */,
 				9FE27AA926B1BA5200F9942B /* ListInteractor.swift in Sources */,
 				9FE27AB026B1CAC800F9942B /* CoreDataManager.swift in Sources */,
@@ -435,9 +447,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FE27AC026B2149700F9942B /* ListRouterTests.swift in Sources */,
+				9F2B654026B2EDEC000914FD /* MockListInteractorInput.swift in Sources */,
+				9F2B654626B2EF96000914FD /* MockListView.swift in Sources */,
+				9F2B654226B2EE5F000914FD /* ListPresenterTests.swift in Sources */,
 				9FE27ABC26B201C700F9942B /* MockCoreDataManager.swift in Sources */,
+				9F2B654826B2F19A000914FD /* MockListEventHandler.swift in Sources */,
 				9FE27ABE26B202D100F9942B /* MockPersistentContainer.swift in Sources */,
-				9FE27ABA26B2001700F9942B /* CoreDataServiceTests.swift in Sources */,
+				9FE27ABA26B2001700F9942B /* CoreDataTests.swift in Sources */,
+				9F2B654A26B30A41000914FD /* ListViewTests.swift in Sources */,
+				9F2B653C26B2E95F000914FD /* ListInteractorTests.swift in Sources */,
+				9F2B654426B2EF44000914FD /* MockListRouter.swift in Sources */,
+				9F2B653E26B2EA6E000914FD /* MockListInteractorOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

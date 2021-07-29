@@ -8,11 +8,11 @@
 import XCTest
 @testable import VIPER_TDD_COREDATA
 
-class CoreDataServiceTests: XCTestCase {
+class CoreDataTests: XCTestCase {
     let mockPersistentContainer = MockPersistentContainer()
     var mockCoreDataManager: MockCoreDataManager?
     
-    let data: [String: Any] = [
+    private let data: [String: Any] = [
         TodoKey.id.rawValue: "123",
         TodoKey.title.rawValue: "abcd",
         TodoKey.completed.rawValue: false

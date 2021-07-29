@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ListTableViewCellType {
+protocol ListTableViewCellProtocol: AnyObject {
     func configureWith(name: String, isChecked: UITableViewCell.AccessoryType)
 }
 
-final class ListTableViewCell: UITableViewCell, ListTableViewCellType {
+class ListTableViewCell: UITableViewCell, ListTableViewCellProtocol {
     
     //MARK: - Properties
     
@@ -21,36 +21,39 @@ final class ListTableViewCell: UITableViewCell, ListTableViewCellType {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setupUI()
+        configureUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    //MARK: Configure Selection
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         accessoryType = selected ? .checkmark : .none
     }
     
-    private func setupUI() {
+    //MARK: - ConfigureUI
+    
+    private func configureUI() {
         nameLabel.font = .preferredFont(forTextStyle: .headline)
         contentView.addSubview(nameLabel)
         
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
         nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
-        nameLabel.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: -10).isActive = true
+        nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
         nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20).isActive = true
     }
     
-    //MARK: - Cell Contents
+    //MARK: - Cell Contents / ListTableViewCellProtocol
     
     func configureWith(name: String, isChecked: UITableViewCell.AccessoryType) {
         nameLabel.text = name
         accessoryType = isChecked
     }
-    
 }
 
 

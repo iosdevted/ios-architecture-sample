@@ -50,17 +50,17 @@ class CoreDataManager: NSObject {
     
     //MARK: - Entity
     
-    func create<T: CoreDataService>(ofType type: T.Type, withData data: [String: Any]?) -> T? {
+    func create<T: CoreDataProtocol>(ofType type: T.Type, withData data: [String: Any]?) -> T? {
         let newEntity = T.create(withData: data, context: context)
         
         return newEntity as? T
     }
     
-    func update<T: CoreDataService>(entity: T, withData data: [String: Any]) {
+    func update<T: CoreDataProtocol>(entity: T, withData data: [String: Any]) {
         entity.update(withData: data)
     }
     
-    func fetch<T: CoreDataService>(ofType: T.Type, withPredicate predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
+    func fetch<T: CoreDataProtocol>(ofType: T.Type, withPredicate predicate: NSPredicate? = nil, sortDescriptors: [NSSortDescriptor]? = nil) -> [T] {
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: T.entityName())
         
         request.returnsObjectsAsFaults = false

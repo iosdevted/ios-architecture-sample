@@ -21,7 +21,7 @@ class MockCoreDataManager: CoreDataManager {
         super.saveContext()
     }
     
-    override func create<T>(ofType type: T.Type, withData data: [String : Any]?) -> T? where T : CoreDataService {
+    override func create<T>(ofType type: T.Type, withData data: [String : Any]?) -> T? where T : CoreDataProtocol {
         self.data = data
         self.createCalled += 1
         
@@ -32,7 +32,7 @@ class MockCoreDataManager: CoreDataManager {
         return super.create(ofType: type, withData: data)
     }
     
-    override func update<T>(entity: T, withData data: [String : Any]) where T : CoreDataService {
+    override func update<T>(entity: T, withData data: [String : Any]) where T : CoreDataProtocol {
         self.data = data
         self.updateCalled += 1
         super.update(entity: entity, withData: data)

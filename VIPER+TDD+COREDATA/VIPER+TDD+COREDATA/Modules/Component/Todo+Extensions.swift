@@ -8,20 +8,20 @@
 import Foundation
 import CoreData
 
-protocol CoreDataService {
+protocol CoreDataProtocol {
     static func entityName() -> String
     
-    static func create(withData data: [String: Any]?, context: NSManagedObjectContext) -> CoreDataService?
+    static func create(withData data: [String: Any]?, context: NSManagedObjectContext) -> CoreDataProtocol?
     
     func update(withData data: [String: Any])
 }
 
-extension Todo: CoreDataService {
+extension Todo: CoreDataProtocol {
     static func entityName() -> String {
         return "Todo"
     }
     
-    static func create(withData data: [String : Any]?, context: NSManagedObjectContext) -> CoreDataService? {
+    static func create(withData data: [String : Any]?, context: NSManagedObjectContext) -> CoreDataProtocol? {
         guard let todo = NSEntityDescription.insertNewObject(forEntityName: Todo.entityName(), into: context) as? Todo else { return nil }
         
         if let data = data {
