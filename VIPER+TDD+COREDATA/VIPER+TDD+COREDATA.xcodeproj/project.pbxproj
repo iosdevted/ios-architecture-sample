@@ -114,7 +114,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9F2B654D26B31CA3000914FD /* Main */ = {
+		9F2B654D26B31CA3000914FD /* MainModules */ = {
 			isa = PBXGroup;
 			children = (
 				9FE27A9F26B1B99000F9942B /* ListRouter.swift */,
@@ -123,18 +123,18 @@
 				9FE27AA626B1BA2400F9942B /* ListPresenter.swift */,
 				9FE27AA826B1BA5200F9942B /* ListInteractor.swift */,
 			);
-			path = Main;
+			path = MainModules;
 			sourceTree = "<group>";
 		};
-		9F2B654E26B31CB5000914FD /* Base */ = {
+		9F2B654E26B31CB5000914FD /* BaseModules */ = {
 			isa = PBXGroup;
 			children = (
 				9FE27A9C26B1B7E900F9942B /* Router.swift */,
 			);
-			path = Base;
+			path = BaseModules;
 			sourceTree = "<group>";
 		};
-		9F2B654F26B31CC1000914FD /* Setting */ = {
+		9F2B654F26B31CC1000914FD /* SettingModules */ = {
 			isa = PBXGroup;
 			children = (
 				9F2B654B26B31BD4000914FD /* AddTodoRouter.swift */,
@@ -143,7 +143,7 @@
 				9F2B655426B31DAB000914FD /* AddTodoPresenter.swift */,
 				9F2B655226B31D9D000914FD /* AddTodoInteractor.swift */,
 			);
-			path = Setting;
+			path = SettingModules;
 			sourceTree = "<group>";
 		};
 		9F2B655626B320B2000914FD /* Extension */ = {
@@ -214,9 +214,9 @@
 			children = (
 				9FE27AAE26B1CAA500F9942B /* Manager */,
 				9FE27A9226B1B52100F9942B /* Component */,
-				9F2B654E26B31CB5000914FD /* Base */,
-				9F2B654D26B31CA3000914FD /* Main */,
-				9F2B654F26B31CC1000914FD /* Setting */,
+				9F2B654E26B31CB5000914FD /* BaseModules */,
+				9F2B654D26B31CA3000914FD /* MainModules */,
+				9F2B654F26B31CC1000914FD /* SettingModules */,
 				9FE27A9126B1B50D00F9942B /* Entity */,
 			);
 			path = Modules;

@@ -28,7 +28,7 @@ class ListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        presenter?.ListViewDidRequestTodoList()
+        presenter?.RequestTodoListCoreData()
     }
     
     //MARK: - Selectors

@@ -17,13 +17,13 @@ class CustomTextField: UITextField {
         leftView = spacer
         leftViewMode = .always
         
-        borderStyle = .none
-        textColor = .white
+        borderStyle = .line
+        textColor = .mainColor
         keyboardAppearance = .dark
         backgroundColor = UIColor(white: 1, alpha: 0.1)
-        setHeight(height: 50)
+        setHeight(height: 40)
         
-        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColor(white: 1.0, alpha: 0.7)])
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [.foregroundColor: UIColor.mainColor])
         
     }
     

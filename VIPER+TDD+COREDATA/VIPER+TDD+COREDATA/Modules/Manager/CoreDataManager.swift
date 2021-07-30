@@ -52,7 +52,6 @@ class CoreDataManager: NSObject {
     
     func create<T: CoreDataProtocol>(ofType type: T.Type, withData data: [String: Any]?) -> T? {
         let newEntity = T.create(withData: data, context: context)
-        
         return newEntity as? T
     }
     

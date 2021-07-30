@@ -14,7 +14,7 @@ protocol ListPresenterProtocol {
 }
 
 protocol ListEventHandler {
-    func ListViewDidRequestTodoList()
+    func RequestTodoListCoreData()
     func ButtonAddClicked()
 }
 
@@ -24,7 +24,11 @@ class ListPresenter {
     weak var view: ListViewController?
     let router: ListRouter
     let interactor: ListInteractorInputProtocol?
-    var todoList = [Todo]()
+    var todoList = [Todo]() {
+        didSet {
+            view?.reloadTableView()
+        }
+    }
     
     init(interactor: ListInteractorInputProtocol, router: ListRouter) {
         self.interactor = interactor
@@ -39,7 +43,7 @@ class ListPresenter {
 //MARK: - ListEventHandler
 
 extension ListPresenter: ListEventHandler {
-    func ListViewDidRequestTodoList() {
+    func RequestTodoListCoreData() {
         interactor?.fetchTodoList()
     }
     
@@ -53,7 +57,6 @@ extension ListPresenter: ListEventHandler {
 extension ListPresenter: ListInteractorOutputProtocol {
     func exportedTodoList(todoList: [Todo]) {
         self.todoList = todoList
-        view?.reloadTableView()
     }
 }
 

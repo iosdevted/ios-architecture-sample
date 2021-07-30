@@ -11,7 +11,7 @@
 | Title | Date | Link |
 |-------|------|------|
 | Simple VIPER + API Network | 2021.07  | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/VIPER) |
-| VIPER + TDD + CoreData | 2021.07.28 ~  | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/VIPER%2BTDD%2BCOREDATA) |
+| VIPER + TDD + CoreData | 2021.07.28 ~  2021.07.30 | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/VIPER%2BTDD%2BCOREDATA) |
 
 
 

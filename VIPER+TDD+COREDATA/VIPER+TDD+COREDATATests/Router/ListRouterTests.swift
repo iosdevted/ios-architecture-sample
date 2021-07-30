@@ -23,6 +23,10 @@ class ListRouterTests: XCTestCase {
             return
         }
         
+        router.pushAddTodoListViewController(from: view, animated: false)
+        
+        XCTAssert(navController.viewControllers.last is AddTodoViewController, "Expect pushed view is AddTodoViewController")
+        
     }
 
 }

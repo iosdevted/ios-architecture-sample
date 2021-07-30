@@ -12,7 +12,7 @@ class MockListEventHandler: ListEventHandler {
     var RequestTodoListCalled = 0
     var ButtonAddClickedCalled = 0
     
-    func ListViewDidRequestTodoList() {
+    func RequestTodoListCoreData() {
         self.RequestTodoListCalled += 1
     }
     
