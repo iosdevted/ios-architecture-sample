@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F2AB06926B5ADC300019962 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AB06826B5ADC300019962 /* ServiceResult.swift */; };
+		9F2AB06B26B5B15100019962 /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AB06A26B5B15100019962 /* Data+Decode.swift */; };
 		9F2AF3A726B5674C00ACC511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3A626B5674C00ACC511 /* AppDelegate.swift */; };
 		9F2AF3A926B5674C00ACC511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3A826B5674C00ACC511 /* SceneDelegate.swift */; };
 		9F2AF3B026B5674E00ACC511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2AF3AF26B5674E00ACC511 /* Assets.xcassets */; };
@@ -27,9 +29,12 @@
 		9F2AF3DB26B5898800ACC511 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3DA26B5898800ACC511 /* NewsTableViewCell.swift */; };
 		9F2AF3DD26B58A7900ACC511 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3DC26B58A7900ACC511 /* UITableView+Reusable.swift */; };
 		9F2AF3E026B58E0E00ACC511 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3DF26B58E0E00ACC511 /* Article.swift */; };
+		9F2AF3E226B5ABBC00ACC511 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2AF3E126B5ABBC00ACC511 /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F2AB06826B5ADC300019962 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		9F2AB06A26B5B15100019962 /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
 		9F2AF3A326B5674C00ACC511 /* MVVM+RXSWIFT+API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+RXSWIFT+API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2AF3A626B5674C00ACC511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2AF3A826B5674C00ACC511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +52,7 @@
 		9F2AF3DA26B5898800ACC511 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		9F2AF3DC26B58A7900ACC511 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		9F2AF3DF26B58E0E00ACC511 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		9F2AF3E126B5ABBC00ACC511 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 				9F2AF3CF26B57A2F00ACC511 /* Base */,
 				9F2AF3CE26B5765900ACC511 /* Main */,
 				9F2AF3DE26B58E0500ACC511 /* Model */,
+				9F2AF3E326B5ABC200ACC511 /* Service */,
 				9F2AF3C926B573AB00ACC511 /* Utility */,
 				9F2AF3C626B56F6B00ACC511 /* Resources */,
 			);
@@ -113,6 +120,7 @@
 				9F2AF3D626B587D700ACC511 /* UIView+LayoutAnchor.swift */,
 				9F2AF3D826B5886900ACC511 /* UIColorExtensions.swift */,
 				9F2AF3DC26B58A7900ACC511 /* UITableView+Reusable.swift */,
+				9F2AB06A26B5B15100019962 /* Data+Decode.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -142,6 +150,15 @@
 				9F2AF3DF26B58E0E00ACC511 /* Article.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9F2AF3E326B5ABC200ACC511 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9F2AF3E126B5ABBC00ACC511 /* APIService.swift */,
+				9F2AB06826B5ADC300019962 /* ServiceResult.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +246,12 @@
 				9F2AF3DB26B5898800ACC511 /* NewsTableViewCell.swift in Sources */,
 				9F2AF3CD26B5764800ACC511 /* NewsViewModel.swift in Sources */,
 				9F2AF3C826B570EA00ACC511 /* NewsViewController.swift in Sources */,
+				9F2AB06B26B5B15100019962 /* Data+Decode.swift in Sources */,
+				9F2AB06926B5ADC300019962 /* ServiceResult.swift in Sources */,
 				9F2AF3DD26B58A7900ACC511 /* UITableView+Reusable.swift in Sources */,
 				9F2AF3D726B587D700ACC511 /* UIView+LayoutAnchor.swift in Sources */,
 				9F2AF3A726B5674C00ACC511 /* AppDelegate.swift in Sources */,
+				9F2AF3E226B5ABBC00ACC511 /* APIService.swift in Sources */,
 				9F2AF3CB26B573E100ACC511 /* UIView+Subviews.swift in Sources */,
 				9F2AF3A926B5674C00ACC511 /* SceneDelegate.swift in Sources */,
 				9F2AF3D326B57B5D00ACC511 /* ViewModelType.swift in Sources */,

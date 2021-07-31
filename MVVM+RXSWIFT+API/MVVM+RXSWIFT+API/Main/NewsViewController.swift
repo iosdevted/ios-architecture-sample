@@ -9,6 +9,7 @@ import UIKit
 import RxCocoa
 import RxDataSources
 import RxSwift
+import SafariServices
 
 final class NewsViewController: UIViewController, ViewType {
     
@@ -17,7 +18,7 @@ final class NewsViewController: UIViewController, ViewType {
     private struct UI {
         static let baseMargin = CGFloat(8)
         static let tableViewFrame = UIScreen.main.bounds
-        static let estimatedRowHeight = CGFloat(80)
+        static let estimatedRowHeight = CGFloat(160)
     }
     
     //MARK: - Properties
@@ -32,7 +33,6 @@ final class NewsViewController: UIViewController, ViewType {
     func setupUI() {
         navigationItem.title = "RxNews"
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: nil, action: nil)
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .edit, target: nil, action: nil)
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.tintColor = .mainColor
         tableView.rowHeight = UITableView.automaticDimension
@@ -47,7 +47,7 @@ final class NewsViewController: UIViewController, ViewType {
         view.addSubviews([tableView, indicatorView])
     }
     
-    //MARK: Rx Event Binding
+    //MARK: -> Rx Event Binding
     
     func setupEventBinding() {
         rx.viewWillAppear
@@ -56,10 +56,6 @@ final class NewsViewController: UIViewController, ViewType {
         
         navigationItem.leftBarButtonItem?.rx.tap
             .bind(to: viewModel.didTapLeftBarButton)
-            .disposed(by: disposeBag)
-        
-        navigationItem.rightBarButtonItem?.rx.tap
-            .bind(to: viewModel.didTapRightBarButton)
             .disposed(by: disposeBag)
         
         tableView.refreshControl?.rx.controlEvent(.valueChanged)
@@ -71,7 +67,7 @@ final class NewsViewController: UIViewController, ViewType {
             .disposed(by: disposeBag)
     }
     
-    //MARK: Rx UI Binding
+    //MARK: <- Rx UI Binding
     
     func setupUIBinding() {
         let dataSource = RxTableViewSectionedReloadDataSource<ArticleData> { (_, tableView, indexPath, item) -> UITableViewCell in
@@ -80,7 +76,43 @@ final class NewsViewController: UIViewController, ViewType {
             return cell
         }
         
+        viewModel.articles
+            .drive(tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
         
+        viewModel.isNetworking
+            .drive(onNext: { [weak self] isNetworking in
+                self?.showNetworkingAnimation(isNetworking)
+            }).disposed(by: disposeBag)
         
+        viewModel.showAlert
+            .drive(onNext: { [weak self] (title, message) in
+                self?.showAlert(title: title, message: message)
+            }).disposed(by: disposeBag)
+        
+        viewModel.showArticle
+            .drive(onNext: { [weak self] urlString in
+                guard let url = URL(string: urlString) else { return }
+                let safariViewController = SFSafariViewController(url: url)
+                self?.navigationController?.pushViewController(safariViewController, animated: true)
+            }).disposed(by: disposeBag)
+    }
+    
+    //MARK: - Action Handler
+    
+    private func showNetworkingAnimation(_ isNetworking: Bool) {
+        if !isNetworking {
+            indicatorView.stopAnimating()
+            tableView.refreshControl?.endRefreshing()
+        } else if !tableView.refreshControl!.isRefreshing {
+            indicatorView.stopAnimating()
+        }
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "OK", style: .default)
+        alertController.addAction(alertAction)
+        present(alertController, animated: true)
     }
 }

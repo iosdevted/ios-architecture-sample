@@ -8,7 +8,7 @@
 import UIKit
 
 final class NewsTableViewCell: UITableViewCell {
-
+    
     // MARK: - Properties
     
     private let titleLabel = UILabel()
@@ -17,25 +17,26 @@ final class NewsTableViewCell: UITableViewCell {
     // MARK: - UI Metrics
     
     private struct UI {
-      static let baseMargin = CGFloat(8)
+        static let baseMargin = CGFloat(8)
     }
     
     // MARK: - Initialize
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-      super.init(style: style, reuseIdentifier: reuseIdentifier)
-      setupUI()
-      setupConstraints()
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        setupUI()
+        setupConstraints()
     }
     
     required init?(coder aDecoder: NSCoder) {
-      fatalError("init(coder:) has not been implemented")
+        fatalError("init(coder:) has not been implemented")
     }
     
     //MARK: - setupUI
     
     private func setupUI() {
         titleLabel.lineBreakMode = .byTruncatingHead
+        titleLabel.numberOfLines = 3
         titleLabel.font = .preferredFont(forTextStyle: .headline)
         
         dateLabel.font = .preferredFont(forTextStyle: .footnote)
@@ -51,10 +52,11 @@ final class NewsTableViewCell: UITableViewCell {
             .activateAnchors()
         
         dateLabel
-          .topAnchor(to: titleLabel.bottomAnchor, constant: UI.baseMargin)
-          .leadingAnchor(to: titleLabel.leadingAnchor)
-          .trailingAnchor(to: titleLabel.trailingAnchor)
-          .activateAnchors()
+            .topAnchor(to: titleLabel.bottomAnchor, constant: UI.baseMargin)
+            .leadingAnchor(to: titleLabel.leadingAnchor)
+            .trailingAnchor(to: titleLabel.trailingAnchor)
+            .bottomAnchor(to: contentView.bottomAnchor, constant: -UI.baseMargin)
+            .activateAnchors()
     }
     
     // MARK: - Cell Contents
