@@ -13,8 +13,8 @@ protocol AddTodoEventHandler {
 
 class AddTodoPresenter {
     weak var view: AddTodoViewController?
-    let interactor: AddTodoInteractorInput
-    let router: AddTodoRouter
+    let interactor: AddTodoInteractorInput?
+    let router: AddTodoRouter?
 
     init(interactor: AddTodoInteractorInput, router: AddTodoRouter) {
         self.interactor = interactor
@@ -35,7 +35,7 @@ extension AddTodoPresenter: AddTodoEventHandler {
         data[TodoKey.title.rawValue] = task
         data[TodoKey.completed.rawValue] = view?.switchCompleted.isOn
         
-        interactor.addTodoToCoreData(withData: data)
+        interactor?.addTodoToCoreData(withData: data)
     }
 }
 

@@ -22,7 +22,7 @@ protocol ListEventHandler {
 
 class ListPresenter {
     weak var view: ListViewController?
-    let router: ListRouter
+    let router: ListRouter?
     let interactor: ListInteractorInputProtocol?
     var todoList = [Todo]() {
         didSet {
@@ -48,7 +48,7 @@ extension ListPresenter: ListEventHandler {
     }
     
     func ButtonAddClicked() {
-        router.pushAddTodoListViewController(from: view, animated: true)
+        router?.pushAddTodoListViewController(from: view, animated: true)
     }
 }
 

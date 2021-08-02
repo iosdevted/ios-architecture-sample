@@ -16,14 +16,14 @@ class ListViewController: UIViewController {
     //MARK: - Properties
     
     var presenter: ListPresenter?
-    private let tableView = UITableView()
+    private let tableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
     
     //MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTableView()
-        configureNavBar()
+        setupTableView()
+        setupNavBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,23 +39,17 @@ class ListViewController: UIViewController {
     
     //MARK: - ConfigureUI
     
-    private func configureNavBar(){
+    private func setupNavBar(){
         navigationItem.title = "VIPER Todo"
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addTapped))
     }
     
-    private func configureTableView() {
+    private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(cellType: ListTableViewCell.self)
-        
         view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        tableView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-        tableView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
 }
 

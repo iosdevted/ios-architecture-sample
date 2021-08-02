@@ -24,8 +24,6 @@ class ListRouter: Router {
     func pushAddTodoListViewController(from view: UIViewController?, animated: Bool) {
         let addTodoRouter = AddTodoRouter()
 
-        view?.navigationController?.pushViewController(addTodoRouter.viewController,
-                                                       animated: animated)
-        
+        view?.navigationController?.pushViewController(addTodoRouter.viewController, animated: animated)
     }
 }

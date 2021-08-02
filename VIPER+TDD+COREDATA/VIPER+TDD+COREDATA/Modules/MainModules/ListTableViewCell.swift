@@ -13,6 +13,10 @@ protocol ListTableViewCellProtocol: AnyObject {
 
 class ListTableViewCell: UITableViewCell, ListTableViewCellProtocol {
     
+    private struct UI {
+        static let baseMargin = CGFloat(20)
+    }
+    
     //MARK: - Properties
     
     private let nameLabel = UILabel()
@@ -42,10 +46,10 @@ class ListTableViewCell: UITableViewCell, ListTableViewCellProtocol {
         contentView.addSubview(nameLabel)
         
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20).isActive = true
-        nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 10).isActive = true
-        nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20).isActive = true
-        nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -20).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: UI.baseMargin).isActive = true
+        nameLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: UI.baseMargin).isActive = true
+        nameLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -UI.baseMargin).isActive = true
+        nameLabel.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -UI.baseMargin).isActive = true
     }
     
     //MARK: - Cell Contents / ListTableViewCellProtocol

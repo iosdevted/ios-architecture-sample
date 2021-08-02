@@ -24,8 +24,8 @@ class AddTodoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavBar()
-        configureUI()
+        setupNavBar()
+        setupUI()
     }
     
     //MARK: - Selectors
@@ -45,16 +45,16 @@ class AddTodoViewController: UIViewController {
     
     //MARK: - ConfigureUI
     
-    private func configureNavBar() {
+    private func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelButtonTapped))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonTapped))
         
     }
     
-    private func configureUI() {
+    private func setupUI() {
         view.backgroundColor = .white
-        view.addSubview(textField)
+        view.addSubviews([textField, switchCompleted])
         
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -63,9 +63,6 @@ class AddTodoViewController: UIViewController {
         
         switchCompleted.addTarget(self, action: #selector(switchStateDidChange(_:)), for: .valueChanged)
         switchCompleted.setOn(false, animated: false)
-        
-        view.addSubview(switchCompleted)
-        
         switchCompleted.translatesAutoresizingMaskIntoConstraints = false
         switchCompleted.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         switchCompleted.rightAnchor.constraint(equalTo: textField.leftAnchor, constant: -10).isActive = true

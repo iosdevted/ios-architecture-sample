@@ -138,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				9F2B654B26B31BD4000914FD /* AddTodoRouter.swift */,
-				9F2B655726B322F3000914FD /* CustomTextField.swift */,
 				9F2B655026B31D8B000914FD /* AddTodoViewController.swift */,
 				9F2B655426B31DAB000914FD /* AddTodoPresenter.swift */,
 				9F2B655226B31D9D000914FD /* AddTodoInteractor.swift */,
@@ -234,6 +233,7 @@
 		9FE27A9226B1B52100F9942B /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				9F2B655726B322F3000914FD /* CustomTextField.swift */,
 				9FE27AC126B21DAC00F9942B /* Reusable */,
 				9F2B655626B320B2000914FD /* Extension */,
 			);
