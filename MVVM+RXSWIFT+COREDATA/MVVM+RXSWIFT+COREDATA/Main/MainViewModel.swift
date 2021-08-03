@@ -30,6 +30,7 @@ struct MainViewModel: MainViewModelType {
     
     //MARK <- UI
     
+    //let todos: Driver<[CoreDataProtocol]>
     let editSetting: Driver<SettingViewModelType>
     
     //MARK: - Initialize
@@ -37,6 +38,8 @@ struct MainViewModel: MainViewModelType {
     init() {
         
         //Fetch Core Data
+        
+        
         
         //Navigation
         

@@ -10,14 +10,21 @@ import CoreData
 
 class CoreDataManager: NSObject {
     
-    let persistentContainer: NSPersistentContainer
+    static let shared: CoreDataManager = CoreDataManager()
+
+    var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Todo")
+
+        container.loadPersistentStores(completionHandler: { (_, error) in
+            if let error = error as NSError? {
+                fatalError("Unresolved error \(error), \(error.userInfo)")
+            }
+        })
+        return container
+    }()
+    
     var context: NSManagedObjectContext {
         return persistentContainer.viewContext
-    }
-    
-    init(persistentContainer: NSPersistentContainer) {
-        self.persistentContainer = persistentContainer
-        super.init()
     }
     
     func saveContext() {
