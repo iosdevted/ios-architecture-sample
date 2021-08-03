@@ -3,54 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9F825F7226B94E350039F17E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F7126B94E350039F17E /* AppDelegate.swift */; };
 		9F825F7426B94E350039F17E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F7326B94E350039F17E /* SceneDelegate.swift */; };
-		9F825F7626B94E350039F17E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F7526B94E350039F17E /* ViewController.swift */; };
-		9F825F7926B94E350039F17E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F825F7726B94E350039F17E /* Main.storyboard */; };
 		9F825F7C26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F7A26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld */; };
 		9F825F7E26B94E380039F17E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F825F7D26B94E380039F17E /* Assets.xcassets */; };
 		9F825F8126B94E380039F17E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F825F7F26B94E380039F17E /* LaunchScreen.storyboard */; };
-		9F825F8C26B94E380039F17E /* MVVM_RXSWIFT_COREDATATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F8B26B94E380039F17E /* MVVM_RXSWIFT_COREDATATests.swift */; };
-		9F825F9726B94E380039F17E /* MVVM_RXSWIFT_COREDATAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825F9626B94E380039F17E /* MVVM_RXSWIFT_COREDATAUITests.swift */; };
+		9F825FA626B94F530039F17E /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F825FA526B94F530039F17E /* RxSwift */; };
+		9F825FAA26B94F530039F17E /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9F825FA926B94F530039F17E /* RxRelay */; };
+		9F825FAC26B94F530039F17E /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9F825FAB26B94F530039F17E /* RxCocoa */; };
+		9F825FB626B958AC0039F17E /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FB526B958AC0039F17E /* ViewType.swift */; };
+		9F825FB826B958B40039F17E /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FB726B958B40039F17E /* ViewModelType.swift */; };
+		9F825FBB26B969970039F17E /* Reactive+Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FBA26B969970039F17E /* Reactive+Base.swift */; };
+		9F825FBD26B96A3B0039F17E /* UIView+Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FBC26B96A3B0039F17E /* UIView+Subviews.swift */; };
+		9F825FBF26B96A760039F17E /* UIView+LayoutAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FBE26B96A760039F17E /* UIView+LayoutAnchor.swift */; };
+		9F825FC126B96BA20039F17E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC026B96BA20039F17E /* MainViewController.swift */; };
+		9F825FC326B96BB10039F17E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC226B96BB10039F17E /* MainViewModel.swift */; };
+		9F825FC526B972140039F17E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC426B972140039F17E /* UIColor+Extensions.swift */; };
+		9F825FC726B9724C0039F17E /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC626B9724C0039F17E /* UITableView+Reusable.swift */; };
+		9F825FC926B972BF0039F17E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC826B972BF0039F17E /* MainTableViewCell.swift */; };
+		9F825FCB26B974B30039F17E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FCA26B974B30039F17E /* SettingViewController.swift */; };
+		9F825FCD26B9758F0039F17E /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FCC26B9758F0039F17E /* SettingViewModel.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9F825F8826B94E380039F17E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F825F6626B94E350039F17E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F825F6D26B94E350039F17E;
-			remoteInfo = "MVVM+RXSWIFT+COREDATA";
-		};
-		9F825F9326B94E380039F17E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9F825F6626B94E350039F17E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F825F6D26B94E350039F17E;
-			remoteInfo = "MVVM+RXSWIFT+COREDATA";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9F825F6E26B94E350039F17E /* MVVM+RXSWIFT+COREDATA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+RXSWIFT+COREDATA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F825F7126B94E350039F17E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F825F7326B94E350039F17E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F825F7526B94E350039F17E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9F825F7826B94E350039F17E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F825F7B26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM_RXSWIFT_COREDATA.xcdatamodel; sourceTree = "<group>"; };
 		9F825F7D26B94E380039F17E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F825F8026B94E380039F17E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F825F8226B94E380039F17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F825F8726B94E380039F17E /* MVVM+RXSWIFT+COREDATATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM+RXSWIFT+COREDATATests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F825F8B26B94E380039F17E /* MVVM_RXSWIFT_COREDATATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_RXSWIFT_COREDATATests.swift; sourceTree = "<group>"; };
-		9F825F8D26B94E380039F17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F825F9226B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM+RXSWIFT+COREDATAUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F825F9626B94E380039F17E /* MVVM_RXSWIFT_COREDATAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_RXSWIFT_COREDATAUITests.swift; sourceTree = "<group>"; };
-		9F825F9826B94E380039F17E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F825FB526B958AC0039F17E /* ViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		9F825FB726B958B40039F17E /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		9F825FBA26B969970039F17E /* Reactive+Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reactive+Base.swift"; sourceTree = "<group>"; };
+		9F825FBC26B96A3B0039F17E /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		9F825FBE26B96A760039F17E /* UIView+LayoutAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LayoutAnchor.swift"; sourceTree = "<group>"; };
+		9F825FC026B96BA20039F17E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9F825FC226B96BB10039F17E /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		9F825FC426B972140039F17E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9F825FC626B9724C0039F17E /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		9F825FC826B972BF0039F17E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		9F825FCA26B974B30039F17E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		9F825FCC26B9758F0039F17E /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,20 +56,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F8426B94E380039F17E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F8F26B94E380039F17E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9F825FAA26B94F530039F17E /* RxRelay in Frameworks */,
+				9F825FAC26B94F530039F17E /* RxCocoa in Frameworks */,
+				9F825FA626B94F530039F17E /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				9F825F7026B94E350039F17E /* MVVM+RXSWIFT+COREDATA */,
-				9F825F8A26B94E380039F17E /* MVVM+RXSWIFT+COREDATATests */,
-				9F825F9526B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests */,
 				9F825F6F26B94E350039F17E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				9F825F6E26B94E350039F17E /* MVVM+RXSWIFT+COREDATA.app */,
-				9F825F8726B94E380039F17E /* MVVM+RXSWIFT+COREDATATests.xctest */,
-				9F825F9226B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,34 +84,82 @@
 		9F825F7026B94E350039F17E /* MVVM+RXSWIFT+COREDATA */ = {
 			isa = PBXGroup;
 			children = (
-				9F825F7126B94E350039F17E /* AppDelegate.swift */,
 				9F825F7326B94E350039F17E /* SceneDelegate.swift */,
-				9F825F7526B94E350039F17E /* ViewController.swift */,
-				9F825F7726B94E350039F17E /* Main.storyboard */,
-				9F825F7D26B94E380039F17E /* Assets.xcassets */,
-				9F825F7F26B94E380039F17E /* LaunchScreen.storyboard */,
-				9F825F8226B94E380039F17E /* Info.plist */,
-				9F825F7A26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld */,
+				9F825F7126B94E350039F17E /* AppDelegate.swift */,
+				9F825FB026B958430039F17E /* Base */,
+				9F825FB126B958470039F17E /* Main */,
+				9F825FB926B958BD0039F17E /* Setting */,
+				9F825FB426B958650039F17E /* Model */,
+				9F825FB226B958550039F17E /* Utility */,
+				9F825FB326B9585E0039F17E /* Service */,
+				9F825FAF26B94F8D0039F17E /* Resources */,
 			);
 			path = "MVVM+RXSWIFT+COREDATA";
 			sourceTree = "<group>";
 		};
-		9F825F8A26B94E380039F17E /* MVVM+RXSWIFT+COREDATATests */ = {
+		9F825FAF26B94F8D0039F17E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				9F825F8B26B94E380039F17E /* MVVM_RXSWIFT_COREDATATests.swift */,
-				9F825F8D26B94E380039F17E /* Info.plist */,
+				9F825F7D26B94E380039F17E /* Assets.xcassets */,
+				9F825F7F26B94E380039F17E /* LaunchScreen.storyboard */,
+				9F825F8226B94E380039F17E /* Info.plist */,
 			);
-			path = "MVVM+RXSWIFT+COREDATATests";
+			path = Resources;
 			sourceTree = "<group>";
 		};
-		9F825F9526B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests */ = {
+		9F825FB026B958430039F17E /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				9F825F9626B94E380039F17E /* MVVM_RXSWIFT_COREDATAUITests.swift */,
-				9F825F9826B94E380039F17E /* Info.plist */,
+				9F825FB526B958AC0039F17E /* ViewType.swift */,
+				9F825FB726B958B40039F17E /* ViewModelType.swift */,
 			);
-			path = "MVVM+RXSWIFT+COREDATAUITests";
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9F825FB126B958470039F17E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9F825FC026B96BA20039F17E /* MainViewController.swift */,
+				9F825FC226B96BB10039F17E /* MainViewModel.swift */,
+				9F825FC826B972BF0039F17E /* MainTableViewCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9F825FB226B958550039F17E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9F825FBA26B969970039F17E /* Reactive+Base.swift */,
+				9F825FBC26B96A3B0039F17E /* UIView+Subviews.swift */,
+				9F825FBE26B96A760039F17E /* UIView+LayoutAnchor.swift */,
+				9F825FC426B972140039F17E /* UIColor+Extensions.swift */,
+				9F825FC626B9724C0039F17E /* UITableView+Reusable.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9F825FB326B9585E0039F17E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9F825FB426B958650039F17E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F825F7A26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F825FB926B958BD0039F17E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				9F825FCA26B974B30039F17E /* SettingViewController.swift */,
+				9F825FCC26B9758F0039F17E /* SettingViewModel.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,45 +178,14 @@
 			dependencies = (
 			);
 			name = "MVVM+RXSWIFT+COREDATA";
+			packageProductDependencies = (
+				9F825FA526B94F530039F17E /* RxSwift */,
+				9F825FA926B94F530039F17E /* RxRelay */,
+				9F825FAB26B94F530039F17E /* RxCocoa */,
+			);
 			productName = "MVVM+RXSWIFT+COREDATA";
 			productReference = 9F825F6E26B94E350039F17E /* MVVM+RXSWIFT+COREDATA.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9F825F8626B94E380039F17E /* MVVM+RXSWIFT+COREDATATests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F825F9E26B94E380039F17E /* Build configuration list for PBXNativeTarget "MVVM+RXSWIFT+COREDATATests" */;
-			buildPhases = (
-				9F825F8326B94E380039F17E /* Sources */,
-				9F825F8426B94E380039F17E /* Frameworks */,
-				9F825F8526B94E380039F17E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F825F8926B94E380039F17E /* PBXTargetDependency */,
-			);
-			name = "MVVM+RXSWIFT+COREDATATests";
-			productName = "MVVM+RXSWIFT+COREDATATests";
-			productReference = 9F825F8726B94E380039F17E /* MVVM+RXSWIFT+COREDATATests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9F825F9126B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9F825FA126B94E380039F17E /* Build configuration list for PBXNativeTarget "MVVM+RXSWIFT+COREDATAUITests" */;
-			buildPhases = (
-				9F825F8E26B94E380039F17E /* Sources */,
-				9F825F8F26B94E380039F17E /* Frameworks */,
-				9F825F9026B94E380039F17E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9F825F9426B94E380039F17E /* PBXTargetDependency */,
-			);
-			name = "MVVM+RXSWIFT+COREDATAUITests";
-			productName = "MVVM+RXSWIFT+COREDATAUITests";
-			productReference = 9F825F9226B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,14 +199,6 @@
 					9F825F6D26B94E350039F17E = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
-					9F825F8626B94E380039F17E = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 9F825F6D26B94E350039F17E;
-					};
-					9F825F9126B94E380039F17E = {
-						CreatedOnToolsVersion = 12.5.1;
-						TestTargetID = 9F825F6D26B94E350039F17E;
-					};
 				};
 			};
 			buildConfigurationList = 9F825F6926B94E350039F17E /* Build configuration list for PBXProject "MVVM+RXSWIFT+COREDATA" */;
@@ -218,13 +210,14 @@
 				Base,
 			);
 			mainGroup = 9F825F6526B94E350039F17E;
+			packageReferences = (
+				9F825FA426B94F530039F17E /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9F825F6F26B94E350039F17E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				9F825F6D26B94E350039F17E /* MVVM+RXSWIFT+COREDATA */,
-				9F825F8626B94E380039F17E /* MVVM+RXSWIFT+COREDATATests */,
-				9F825F9126B94E380039F17E /* MVVM+RXSWIFT+COREDATAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -236,21 +229,6 @@
 			files = (
 				9F825F8126B94E380039F17E /* LaunchScreen.storyboard in Resources */,
 				9F825F7E26B94E380039F17E /* Assets.xcassets in Resources */,
-				9F825F7926B94E350039F17E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F8526B94E380039F17E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F9026B94E380039F17E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,53 +239,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F825FC926B972BF0039F17E /* MainTableViewCell.swift in Sources */,
 				9F825F7C26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld in Sources */,
-				9F825F7626B94E350039F17E /* ViewController.swift in Sources */,
+				9F825FBF26B96A760039F17E /* UIView+LayoutAnchor.swift in Sources */,
 				9F825F7226B94E350039F17E /* AppDelegate.swift in Sources */,
+				9F825FB626B958AC0039F17E /* ViewType.swift in Sources */,
+				9F825FCB26B974B30039F17E /* SettingViewController.swift in Sources */,
+				9F825FC726B9724C0039F17E /* UITableView+Reusable.swift in Sources */,
+				9F825FBD26B96A3B0039F17E /* UIView+Subviews.swift in Sources */,
+				9F825FC326B96BB10039F17E /* MainViewModel.swift in Sources */,
+				9F825FC526B972140039F17E /* UIColor+Extensions.swift in Sources */,
+				9F825FCD26B9758F0039F17E /* SettingViewModel.swift in Sources */,
+				9F825FB826B958B40039F17E /* ViewModelType.swift in Sources */,
+				9F825FC126B96BA20039F17E /* MainViewController.swift in Sources */,
 				9F825F7426B94E350039F17E /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F8326B94E380039F17E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F825F8C26B94E380039F17E /* MVVM_RXSWIFT_COREDATATests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F825F8E26B94E380039F17E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9F825F9726B94E380039F17E /* MVVM_RXSWIFT_COREDATAUITests.swift in Sources */,
+				9F825FBB26B969970039F17E /* Reactive+Base.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		9F825F8926B94E380039F17E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F825F6D26B94E350039F17E /* MVVM+RXSWIFT+COREDATA */;
-			targetProxy = 9F825F8826B94E380039F17E /* PBXContainerItemProxy */;
-		};
-		9F825F9426B94E380039F17E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9F825F6D26B94E350039F17E /* MVVM+RXSWIFT+COREDATA */;
-			targetProxy = 9F825F9326B94E380039F17E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		9F825F7726B94E350039F17E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9F825F7826B94E350039F17E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9F825F7F26B94E380039F17E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +394,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATA/Info.plist";
+				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATA/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,7 +413,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATA/Info.plist";
+				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATA/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,91 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		9F825F9F26B94E380039F17E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATATests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATATests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM+RXSWIFT+COREDATA.app/MVVM+RXSWIFT+COREDATA";
-			};
-			name = Debug;
-		};
-		9F825FA026B94E380039F17E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATATests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATATests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM+RXSWIFT+COREDATA.app/MVVM+RXSWIFT+COREDATA";
-			};
-			name = Release;
-		};
-		9F825FA226B94E380039F17E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATAUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATAUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MVVM+RXSWIFT+COREDATA";
-			};
-			name = Debug;
-		};
-		9F825FA326B94E380039F17E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+RXSWIFT+COREDATAUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-RXSWIFT-COREDATAUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MVVM+RXSWIFT+COREDATA";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -578,25 +446,36 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9F825F9E26B94E380039F17E /* Build configuration list for PBXNativeTarget "MVVM+RXSWIFT+COREDATATests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F825F9F26B94E380039F17E /* Debug */,
-				9F825FA026B94E380039F17E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9F825FA126B94E380039F17E /* Build configuration list for PBXNativeTarget "MVVM+RXSWIFT+COREDATAUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9F825FA226B94E380039F17E /* Debug */,
-				9F825FA326B94E380039F17E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9F825FA426B94F530039F17E /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9F825FA526B94F530039F17E /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F825FA426B94F530039F17E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		9F825FA926B94F530039F17E /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F825FA426B94F530039F17E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		9F825FAB26B94F530039F17E /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9F825FA426B94F530039F17E /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		9F825F7A26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld */ = {
