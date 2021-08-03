@@ -27,6 +27,9 @@
 		9F825FC926B972BF0039F17E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FC826B972BF0039F17E /* MainTableViewCell.swift */; };
 		9F825FCB26B974B30039F17E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FCA26B974B30039F17E /* SettingViewController.swift */; };
 		9F825FCD26B9758F0039F17E /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FCC26B9758F0039F17E /* SettingViewModel.swift */; };
+		9F825FCF26B982F50039F17E /* TodoKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FCE26B982F50039F17E /* TodoKey.swift */; };
+		9F825FD126B986440039F17E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FD026B986440039F17E /* CoreDataManager.swift */; };
+		9F825FD326B986730039F17E /* Todo+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F825FD226B986730039F17E /* Todo+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,9 @@
 		9F825FC826B972BF0039F17E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		9F825FCA26B974B30039F17E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9F825FCC26B9758F0039F17E /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		9F825FCE26B982F50039F17E /* TodoKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoKey.swift; sourceTree = "<group>"; };
+		9F825FD026B986440039F17E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		9F825FD226B986730039F17E /* Todo+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Todo+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,7 @@
 				9F825FB926B958BD0039F17E /* Setting */,
 				9F825FB426B958650039F17E /* Model */,
 				9F825FB226B958550039F17E /* Utility */,
-				9F825FB326B9585E0039F17E /* Service */,
+				9F825FB326B9585E0039F17E /* Manager */,
 				9F825FAF26B94F8D0039F17E /* Resources */,
 			);
 			path = "MVVM+RXSWIFT+COREDATA";
@@ -134,21 +140,24 @@
 				9F825FBE26B96A760039F17E /* UIView+LayoutAnchor.swift */,
 				9F825FC426B972140039F17E /* UIColor+Extensions.swift */,
 				9F825FC626B9724C0039F17E /* UITableView+Reusable.swift */,
+				9F825FD226B986730039F17E /* Todo+Extensions.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		9F825FB326B9585E0039F17E /* Service */ = {
+		9F825FB326B9585E0039F17E /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				9F825FD026B986440039F17E /* CoreDataManager.swift */,
 			);
-			path = Service;
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		9F825FB426B958650039F17E /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9F825F7A26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld */,
+				9F825FCE26B982F50039F17E /* TodoKey.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -243,9 +252,12 @@
 				9F825F7C26B94E350039F17E /* MVVM_RXSWIFT_COREDATA.xcdatamodeld in Sources */,
 				9F825FBF26B96A760039F17E /* UIView+LayoutAnchor.swift in Sources */,
 				9F825F7226B94E350039F17E /* AppDelegate.swift in Sources */,
+				9F825FD126B986440039F17E /* CoreDataManager.swift in Sources */,
 				9F825FB626B958AC0039F17E /* ViewType.swift in Sources */,
 				9F825FCB26B974B30039F17E /* SettingViewController.swift in Sources */,
 				9F825FC726B9724C0039F17E /* UITableView+Reusable.swift in Sources */,
+				9F825FCF26B982F50039F17E /* TodoKey.swift in Sources */,
+				9F825FD326B986730039F17E /* Todo+Extensions.swift in Sources */,
 				9F825FBD26B96A3B0039F17E /* UIView+Subviews.swift in Sources */,
 				9F825FC326B96BB10039F17E /* MainViewModel.swift in Sources */,
 				9F825FC526B972140039F17E /* UIColor+Extensions.swift in Sources */,

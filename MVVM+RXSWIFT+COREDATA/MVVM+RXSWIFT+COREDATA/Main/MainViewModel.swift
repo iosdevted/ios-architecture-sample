@@ -23,7 +23,7 @@ protocol MainViewModelType: ViewModelType {
 
 struct MainViewModel: MainViewModelType {
     
-    //MARk: -> Event
+    //MARK: -> Event
     
     let viewWillAppear = PublishSubject<Void>()
     let didTapRightBarButton = PublishSubject<Void>()
@@ -35,6 +35,8 @@ struct MainViewModel: MainViewModelType {
     //MARK: - Initialize
     
     init() {
+        
+        //Fetch Core Data
         
         //Navigation
         

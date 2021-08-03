@@ -10,8 +10,17 @@ import RxSwift
 
 protocol SettingViewModelType: ViewModelType {
     
+    // Event
+    
+    var didSwitchValueChanged: PublishSubject<Void> { get }
+    
 }
 
 struct SettingViewModel: SettingViewModelType {
+    
+    //MARK: -> Event
+    
+    let didSwitchValueChanged = PublishSubject<Void>()
+    
     
 }
