@@ -13,4 +13,4 @@
 | VIPER + Simple API Network | 2021.07  | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/VIPER) |
 | VIPER + TDD + CoreData | 2021.07.28 ~  2021.07.30 | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/VIPER%2BTDD%2BCOREDATA) |
 | MVVM + RxSwift + RxCocoa + API| 2021.07.30 ~ 2021.07.31 | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/MVVM%2BRXSWIFT%2BAPI) |
-| MVP + CoreData | 2021.08.01 ~ | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/MVP%2BCOREDATA) |
+| MVVM + RxSwift + RxCocoa + CoreData | 2021.08.01 ~ | [Link]() |

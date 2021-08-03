@@ -1,13 +1,13 @@
 //
-//  MVP_COREDATAUITests.swift
-//  MVP+COREDATAUITests
+//  MVVM_RXSWIFT_COREDATAUITests.swift
+//  MVVM+RXSWIFT+COREDATAUITests
 //
-//  Created by Ted on 2021/08/02.
+//  Created by Ted on 2021/08/03.
 //
 
 import XCTest
 
-class MVP_COREDATAUITests: XCTestCase {
+class MVVM_RXSWIFT_COREDATAUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

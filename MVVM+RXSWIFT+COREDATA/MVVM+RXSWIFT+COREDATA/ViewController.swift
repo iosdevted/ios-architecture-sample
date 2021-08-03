@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  MVP+COREDATA
+//  MVVM+RXSWIFT+COREDATA
 //
-//  Created by Ted on 2021/08/02.
+//  Created by Ted on 2021/08/03.
 //
 
 import UIKit
