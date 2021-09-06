@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		9FD6BA3726C29BDF007A2562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6BA3626C29BDF007A2562 /* AppDelegate.swift */; };
 		9FD6BA3926C29BDF007A2562 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6BA3826C29BDF007A2562 /* SceneDelegate.swift */; };
-		9FD6BA3B26C29BDF007A2562 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6BA3A26C29BDF007A2562 /* ViewController.swift */; };
-		9FD6BA3E26C29BDF007A2562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6BA3C26C29BDF007A2562 /* Main.storyboard */; };
 		9FD6BA4026C29BE1007A2562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6BA3F26C29BE1007A2562 /* Assets.xcassets */; };
 		9FD6BA4326C29BE1007A2562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6BA4126C29BE1007A2562 /* LaunchScreen.storyboard */; };
+		9FD6BA5026C2B8F3007A2562 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD6BA4F26C2B8F3007A2562 /* Box.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FD6BA3326C29BDF007A2562 /* MVVM+API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM+API.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD6BA3626C29BDF007A2562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FD6BA3826C29BDF007A2562 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9FD6BA3A26C29BDF007A2562 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9FD6BA3D26C29BDF007A2562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FD6BA3F26C29BE1007A2562 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FD6BA4226C29BE1007A2562 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FD6BA4426C29BE1007A2562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD6BA4F26C2B8F3007A2562 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,54 @@
 		9FD6BA3526C29BDF007A2562 /* MVVM+API */ = {
 			isa = PBXGroup;
 			children = (
-				9FD6BA3626C29BDF007A2562 /* AppDelegate.swift */,
 				9FD6BA3826C29BDF007A2562 /* SceneDelegate.swift */,
-				9FD6BA3A26C29BDF007A2562 /* ViewController.swift */,
-				9FD6BA3C26C29BDF007A2562 /* Main.storyboard */,
+				9FD6BA3626C29BDF007A2562 /* AppDelegate.swift */,
+				9FD6BA4D26C2A9E1007A2562 /* Main */,
+				9FD6BA4C26C2A9D8007A2562 /* Model */,
+				9FD6BA4E26C2A9E7007A2562 /* Service */,
+				9FD6BA4B26C2A9D3007A2562 /* Utility */,
+				9FD6BA4A26C2A90A007A2562 /* Resources */,
+			);
+			path = "MVVM+API";
+			sourceTree = "<group>";
+		};
+		9FD6BA4A26C2A90A007A2562 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9FD6BA3F26C29BE1007A2562 /* Assets.xcassets */,
 				9FD6BA4126C29BE1007A2562 /* LaunchScreen.storyboard */,
 				9FD6BA4426C29BE1007A2562 /* Info.plist */,
 			);
-			path = "MVVM+API";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9FD6BA4B26C2A9D3007A2562 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				9FD6BA4F26C2B8F3007A2562 /* Box.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		9FD6BA4C26C2A9D8007A2562 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD6BA4D26C2A9E1007A2562 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9FD6BA4E26C2A9E7007A2562 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +163,6 @@
 			files = (
 				9FD6BA4326C29BE1007A2562 /* LaunchScreen.storyboard in Resources */,
 				9FD6BA4026C29BE1007A2562 /* Assets.xcassets in Resources */,
-				9FD6BA3E26C29BDF007A2562 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FD6BA3B26C29BDF007A2562 /* ViewController.swift in Sources */,
+				9FD6BA5026C2B8F3007A2562 /* Box.swift in Sources */,
 				9FD6BA3726C29BDF007A2562 /* AppDelegate.swift in Sources */,
 				9FD6BA3926C29BDF007A2562 /* SceneDelegate.swift in Sources */,
 			);
@@ -146,14 +182,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9FD6BA3C26C29BDF007A2562 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9FD6BA3D26C29BDF007A2562 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9FD6BA4126C29BE1007A2562 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+API/Info.plist";
+				INFOPLIST_FILE = "MVVM+API/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4L2695C228;
-				INFOPLIST_FILE = "MVVM+API/Info.plist";
+				INFOPLIST_FILE = "MVVM+API/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tedhyeong.MVVM-API";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
