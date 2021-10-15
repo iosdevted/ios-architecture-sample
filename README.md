@@ -16,3 +16,4 @@
 | MVVM + RxSwift + RxCocoa + API | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/MVVM%2BRXSWIFT%2BAPI) |
 | MVVM + RxSwift + RxCocoa + CoreData | [Link](https://github.com/iosdevted/ios-architecture-sample/tree/master/MVVM%2BRXSWIFT%2BCOREDATA) |
 | MVVM + API | [Link]() |
+| MVVM-C + RxSwift + DI | [Link]() |
