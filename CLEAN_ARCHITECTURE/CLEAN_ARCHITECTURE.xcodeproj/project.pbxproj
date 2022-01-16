@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		4B924944271C7A0000E1D15B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B924942271C7A0000E1D15B /* Main.storyboard */; };
 		4B924946271C7A0100E1D15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B924945271C7A0100E1D15B /* Assets.xcassets */; };
 		4B924949271C7A0100E1D15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B924947271C7A0100E1D15B /* LaunchScreen.storyboard */; };
+		4B924972271CCC4500E1D15B /* TestLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 4B924971271CCC4500E1D15B /* TestLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B924972271CCC4500E1D15B /* TestLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CLEAN_ARCHITECTURE;
+			packageProductDependencies = (
+				4B924971271CCC4500E1D15B /* TestLibrary */,
+			);
 			productName = CLEAN_ARCHITECTURE;
 			productReference = 4B924939271C7A0000E1D15B /* CLEAN_ARCHITECTURE.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = 4B924930271C7A0000E1D15B;
+			packageReferences = (
+				4B924970271CCC4500E1D15B /* XCRemoteSwiftPackageReference "test-spm" */,
+			);
 			productRefGroup = 4B92493A271C7A0000E1D15B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4B924970271CCC4500E1D15B /* XCRemoteSwiftPackageReference "test-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:iosdevted/test-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4B924971271CCC4500E1D15B /* TestLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4B924970271CCC4500E1D15B /* XCRemoteSwiftPackageReference "test-spm" */;
+			productName = TestLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4B924931271C7A0000E1D15B /* Project object */;
 }

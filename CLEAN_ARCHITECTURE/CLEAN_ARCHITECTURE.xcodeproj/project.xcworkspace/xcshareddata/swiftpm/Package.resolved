@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TestLibrary",
+        "repositoryURL": "git@github.com:iosdevted/test-spm.git",
+        "state": {
+          "branch": null,
+          "revision": "641ff8a5985db352dc186bd24722cf12b1de4193",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
